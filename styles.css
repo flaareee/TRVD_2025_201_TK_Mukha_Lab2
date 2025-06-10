@@ -1,0 +1,312 @@
+/* Базові скидання та глобальні стилі */
+* {
+    box-sizing: border-box; /* Важливо для адаптивної верстки */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Для плавної прокрутки при навігації */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Використовуйте шрифти з дизайну */
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    min-width: 1024px; /* Мінімальна ширина згідно вимог */
+}
+
+/* Контейнер для центрування вмісту та обмеження ширини */
+.container {
+    max-width: 1200px; /* Або інша максимальна ширина з дизайну */
+    margin: 0 auto;
+    padding: 0 20px; /* Відступи по боках */
+}
+
+/* Стилі для заголовків та абзаців */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1em;
+    line-height: 1.2;
+    color: #222; /* Або колір з дизайну */
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #007bff; /* Колір посилань з дизайну */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Усуває зайві відступи під зображеннями */
+}
+
+/* Кнопки */
+.call-to-action-button {
+    display: inline-block;
+    background-color: #007bff; /* Колір з дизайну */
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action-button:hover {
+    background-color: #0056b3; /* Темніший відтінок при наведенні */
+}
+
+/* Header */
+.page-header {
+    background-color: #f8f8f8; /* Колір з дизайну */
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Розмір логотипу з дизайну */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 30px; /* Відстань між пунктами меню */
+}
+
+.nav-link {
+    font-weight: bold;
+    color: #555; /* Колір посилань навігації */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #e9ecef; /* Колір фону або фонове зображення */
+    padding: 80px 0;
+    text-align: center;
+    color: #333;
+}
+
+.hero-section h1 {
+    font-size: 3em; /* Розмір заголовка з дизайну */
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 колонки для десктопу, адаптуються */
+    gap: 30px; /* Відстань між елементами */
+}
+
+.feature-item {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+    height: 60px; /* Розмір іконок */
+    margin: 0 auto 20px auto;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center; /* Центрування по вертикалі */
+}
+
+.about-image {
+    flex: 1; /* Зображення займатиме половину доступного простору */
+    max-width: 50%; /* Обмеження ширини зображення */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1; /* Текст займатиме половину доступного простору */
+}
+
+/* Footer */
+.page-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0 20px 0;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 3 колонки для десктопу */
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-column h4 {
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+.footer-column p, .footer-column a {
+    color: #bbb;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.footer-column a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-nav-list {
+    list-style: none;
+}
+
+.footer-nav-list li {
+    margin-bottom: 10px;
+}
+
+.footer-nav-list a {
+    color: #bbb;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links img {
+    height: 30px; /* Розмір іконок соцмереж */
+    width: 30px;
+    vertical-align: middle;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+/* Адаптація для екранів від 1024px до максимальної ширини */
+@media (min-width: 1024px) {
+    /* Тут можна додати специфічні стилі для великих екранів, якщо вони відрізняються */
+}
+
+/* Адаптація для екранів до 1024px */
+/* Хоча вимога - мінімальна ширина 1024px, на практиці іноді потрібно додати стилі для проміжку */
+/* Це залежить від того, як виглядає дизайн на менших екранах, якщо вони припустимі */
+/* Якщо дизайн суворо починається з 1024px, то стилі вище вже є базовими для нього. */
+
+/* Приклад, якщо все ж треба зробити адаптацію для менших екранів, ніж 1024px,
+   але за умови, що дизайн дозволяє.
+   Оскільки вимога мінімальна ширина 1024px, цей блок може бути не потрібен,
+   або якщо дизайн має різні точки зупинки. */
+/*
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1023px) {
+    body {
+        min-width: unset; // Дозволяємо меншу ширину, якщо це доречно для мобільних
+    }
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .nav-item {
+        margin: 0 0 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+    .features-grid {
+        grid-template-columns: 1fr; // Одна колонка для мобільних
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .about-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-columns {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .social-links {
+        justify-content: center;
+        display: flex;
+    }
+}
+*/
